@@ -13,7 +13,7 @@ function carregarDados() {
       const row = document.createElement('tr');
       row.innerHTML = `
           <td>${post.nome}</td>
-          <td>${post.foto}</td>
+          <td class="image-cell"><img src="${post.foto}" alt="${post.nome}"></td>        
           <td>${post.idade}</td>
           <td>${post.descricao}</td>
           <td>${post.tipo}</td>

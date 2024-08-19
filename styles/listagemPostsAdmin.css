@@ -13,6 +13,10 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -24,6 +28,11 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Garante que a tabela se ajuste bem em telas menores */
 }
 
 table, th, td {
@@ -62,4 +71,17 @@ td .delete-btn {
 
 #newPostBtn:hover {
     background-color: #27ae60;
+}
+
+
+.image-cell {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.image-cell img {
+    max-width: 150px; /* Define um tamanho máximo para a imagem */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }

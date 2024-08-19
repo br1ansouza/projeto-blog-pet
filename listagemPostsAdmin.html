@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de Posts - Admin</title>
     <link rel="stylesheet" href="/styles/listagemPostsAdmin.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Posts do Pet Blog</h1>
-        <table id="postsTable">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Foto</th>
-                    <th>Idade</th>
-                    <th>Descrição</th>
-                    <th>Categoria</th>
-                    <th>Data de Criação</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Os posts serão listados aqui pelo JS -->
-            </tbody>
-        </table>
-      <button id="newPostBtn">+ Novo post</button> 
+        <div class="table-container">
+            <table id="postsTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Foto</th>
+                        <th>Idade</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Data de Criação</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os posts serão listados aqui pelo JS -->
+                </tbody>
+            </table>
+        </div>
+        <button id="newPostBtn">+ Novo post</button>
     </div>
 
     <script src="scripts/listagemPostsAdmin.js"></script>
     <script>
-        document.getElementById('newPostBtn').addEventListener('click', function() {
+        document.getElementById('newPostBtn').addEventListener('click', function () {
             window.location.href = 'index.html';
         });
     </script>
 </body>
+
 </html>

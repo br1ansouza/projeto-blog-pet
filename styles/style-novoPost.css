@@ -92,7 +92,7 @@ footer, .social-media {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 78vh; /* Garante que o contêiner ocupe 100% da altura da tela */
+    min-height: 81vh; /* Garante que o contêiner ocupe 100% da altura da tela */
   }
   
   form {
