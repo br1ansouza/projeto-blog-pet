@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/style-novoPost.css">
+</head>
+
+<body>
+    <div class="form-container">
+    <div class="container-home">
+        <h1>Cadastro de Pets</h1>
+
+        <form id="form-pet">
+
+            <div class="input-container">
+                <label for="foto">Foto do pet</label>
+                <input type="url" id="foto" />
+                <span id="error-foto" style="color: red;"></span>
+            </div>
+
+            <div class="form-row">
+                <div class="input-container" style="flex-basis: 40%;">
+                    <label for="nome">Nome do pet</label>
+                    <input id="nome" placeholder="Digite o nome do pet" />
+                    <span id="error-nome" style="color: red;"></span>
+                </div>
+                <div class="input-container" style="flex-basis: 40%;">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" placeholder="Digite a idade do pet" />
+                    <span id="error-idade" style="color: red;"></span>
+                </div>
+            </div>
+            <div class="input-container">
+                <label for="cor"> Cor do pet</label>
+                <input type="color" id="cor">
+            </div>
+            <div class="input-container">
+                <label for="descricao"> Descrição</label>
+                <textarea id="descricao" placeholder="Digite uma descrição do pet"></textarea>
+                <span id="error-descricao" style="color: red;"></span>
+            </div>
+
+            <div class="input-container">
+                <label>Espécie</label>
+                <select id="tipo">
+                    <option value="" class="option-bold">Selecione uma espécie</option>
+                    <option value="cachorro">Cão</option>
+                    <option value="gato">Gato</option>
+                    <option value="passaro">Pássaro</option>
+                    <option value="morsa">Morsa</option>
+                    <option value="diversos">Diversos</option>
+                </select>
+                <span id="error-tipo" style="color: red;"></span>
+            </div>
+
+            <div class="button-container">
+                <button class="button-submit" type="submit">Salvar</button>
+            </div>
+
+        </form>
+    </div>
+    </div>
+    <script src="/scripts/novoPost.js"></script>
+
+
+    <footer>
+        <div class="container-footer">
+            <div class="footer-content">
+              <p>© 2024 Todos os direitos reservados.</p>
+              <p>Contato: contato@pets.com</p>
+              <div class="social-media">
+                <a href="https://www.facebook.com/?locale=pt_BR"><img src="https://img.icons8.com/?size=48&id=118497&format=png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="https://img.icons8.com/?size=48&id=32323&format=png" alt="Instagram"></a>
+                <a href="https://web.whatsapp.com/"><img src="https://img.icons8.com/?size=48&id=16713&format=png" alt="Whatsapp"></a>
+              </div>
+            </div>
+          </div>
+    </footer>
+</body>
+
+</html>

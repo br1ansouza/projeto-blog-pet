@@ -1,0 +1,133 @@
+body {
+    background-image: url('assets/bg2.png');
+}
+
+.container-home {
+    width: 50%;
+    background-color: white;
+    margin: 40px auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 10px;
+}
+
+.container-home h1 {
+    color: #8599af;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+    /* gap: 5px; */
+}
+
+.input-container label {
+    margin-bottom: 5px;
+}
+
+.input-container input, textarea, select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid #8599af;
+    outline-color: #495f75;
+    resize: vertical;
+}
+
+.input-container textarea {
+    height: auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-submit {
+    width: 100px;
+    border-radius: 8px;
+    color: aliceblue;
+    background-color: #8599af;
+    margin-top: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.button-submit:hover {
+    background-color: #495f75;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.option-bold {
+    font-weight: bold;
+    background-color: rgb(223, 223, 223);
+}
+
+.container-footer {
+    background-color: #8599af;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+footer, .social-media {
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 78vh; /* Garante que o contêiner ocupe 100% da altura da tela */
+  }
+  
+  form {
+    width: 100%; /* Faz o formulário ocupar toda a largura do contêiner */
+    ; /* Limita a largura máxima do formulário */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+   .form-row {
+    flex-direction: column;
+   }
+
+   .container-home {
+    width: 90%;
+   }
+}
+
+/* https://paletadecores.com/paleta/a44825/bb603b/d27751/e88f66/ffa67c/ */
