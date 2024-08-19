@@ -46,5 +46,5 @@ function deletar(idRecebido) {
 
 document.addEventListener('DOMContentLoaded', carregarDados);
 document.getElementById('newPostBtn').addEventListener('click', function() {
-  window.location.href = 'novoPost.html';
+  window.location.href = 'index.html';
 });
